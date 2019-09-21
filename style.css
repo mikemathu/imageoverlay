@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+.overlay2{
+	padding-top: 250px;
+}
+
+.overlay-container{
+
+	text-align: center;
+	margin: 0 50px 0 50px;
+}
+
+.overlay-box {
+	position: relative;
+	margin-bottom:20px;
+    width: 350px;
+    height: 200px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.para{
+	margin: 0 50px 0 50px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+
+.para-box{
+	width: 350px;
+	text-align: center;
+}
+
+.overlay-box:hover .image{
+	transform: scale(1.1);
+}
+
+.image {
+    display: block;
+    width: 350px;
+	height: 200px;
+	transition:transform 0.5s;
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+	color: white;
+	font-family: sans-serif;
+	font-size: 12px;
+	line-height: 1.4rem;
+	display:block;
+	transform: translate(-50%, -50%);
+	transition: 0.5s;
+}
+
+.overlay-box:hover .text{
+	left:0;
+	margin-left: -50px;
+}
+
+.overlay {
+	background-color: #008cba;
+	position: absolute;
+	transition:all .3s ease;
+	opacity: 0.7;
+}
+
+.overlayLeft{
+	background-color:black;
+    height: 100%;
+    top:0;
+	left:0;
+	width: 34%;
+	display:block;
+	transition:0.5s;
+}
+
+.overlay-box:hover .overlayLeft  {
+	width: 0;
+}
